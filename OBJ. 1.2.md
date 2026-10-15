@@ -1,0 +1,102 @@
+
+### Network Components
+
+A network consists of:
+	Clients
+	Servers
+	Hubs
+	Switches
+	Wireless Access Points (WAPs/APs)
+	Routers
+	Firewalls
+	Load Balancers
+	Proxy
+	Intrusion Detection Systems & Intrusion Prevention Systems
+	Controllers
+	Network-attached Storage (NAS) devices
+	Media
+	Wide Area Network (WAN) links
+
+Clients: Devices that users access the network with. This consists of things like:
+	Laptops
+	Workstations
+	Smartphones
+	Tablets
+	They consist of any device that will be on the network and they are all collectively referred to as clients
+
+Servers: Provide resources to other clients on the network. Includes things like:
+	Email Servers
+	File Servers
+	Media Servers
+
+Hubs: Older devices that connect other devices like clients and servers over a local area network. 
+	Not commonly used in modern networks but relevant for the exam. 
+	Prone to network errors due to their broadcasting nature
+	Evolved into Bridges, and then Switches
+
+Switches: "Smarter Hubs" more efficient bandwidth usage and secure.
+	Used to connect network devices and forward traffic from one port, to the destination port
+
+Wireless Access Points/Access Points (WAPs/APs): Allow wireless devices to connect to a wired network.
+	Like Hubs, used to broadcast data, but instead of over copper or fiber cable it utilizes radio signals to do so
+
+Routers: Used to connect different networks together
+	Make forwarding decisions based on the IP address of the devices communicating
+	Rely on the Internet Protocol to route traffic across the network/networks
+
+Firewalls: Security barriers between internal networks and external networks (Usually the internet)
+	Monitor and control incoming and outgoing traffic
+	Protects network from unauthorized attacks and other threats
+	Can be hardware-based, software-based, or a mix of both
+
+Load Balancers: Devices or software that distribute traffic across multiple servers
+	This ensures that no single server bears too much demand, preventing bottlenecks
+
+Proxy: Acts as an intermediary between a user's device and the internet
+	Web filtering
+	Shared network connections
+	Data caching
+	Enhanced security and privacy
+
+Intrusion Detection System (IDS): Detects unauthorized access or anomalies and alerts administrators
+
+Intrusion Prevention System (IPS): Also takes action to prevent intrusion, as well as everything the IDS does
+
+Controllers: Central units used to manage flow control to networking devices
+
+Network Attached Storage (NAS) Device: Dedicated file storage system that provides data access to a wide variety of clients
+
+Storage Area Network (SAN): High-speed network that provides access to consolidated block-level data storage
+	Typically used to enhance storage devices
+
+Media: Physical materials used to transmit data
+
+Wide Area Network (WAN) Link: Used to connect networks over large geographical areas
+
+### Network Resources
+
+Two Main Models:
+	Client/Server Model
+	Peer-to-Peer Model
+
+Client/Server Model: Uses a dedicated server to provide access to network resources, such as files, scanners, printers, etc.
+	Pros:
+		Centralized administration
+		Easier Management
+		Better Scalability
+		Leading model in business networks
+	Cons:
+		Costs more
+		Requires dedicated OSes
+		Requires specialized skillset
+
+Peer-to-Peer Model: Peers or other machines (e.g., laptops, desktops) can share resources directly
+	Pros:
+		Lower cost
+		No specialized OS
+		No dedicated resources
+	Cons:
+		Administration is difficult since all files are located on different machines in different places
+		Scalability is difficult for this same reason
+		If machine is off, files may be inaccessible
+		Inefficient for large networks

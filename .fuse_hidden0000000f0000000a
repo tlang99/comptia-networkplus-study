@@ -1,0 +1,127 @@
+
+### Network Geography
+
+Personal Area Network (PAN): Smallest type of wired or wireless network which usually covers a distance of about 10 feet or less
+	Ex. Bluetooth and USB
+		Bluetooth transmitting music to your car sound system is an example of a PAN. Another is connecting a USB drive to a computer.
+
+Local Area Network (LAN): Connects components in a limited distance, up to about 300 feet or 100 meters
+	Ex. Home, floor of an office building, classroom
+
+Campus Area Network (CAN): Connects multiple LANs that are spread across numerous buildings in a certain area
+	Can cover several miles and many buildings
+	Ex. College campuses may utilize a CAN to link multiple LANs across multiple buildings
+	Also used by military bases or business parks
+
+Metropolitan Area Network (MAN): Connects locations that are scattered across the entire city
+	Larger than a CAN, but smaller than a WAN
+	Ex. Separate campuses of one college may connect their CANs/LANs via a MAN
+
+Wide Area Network (WAN): Connects geographically disparate internal networks
+	Ex. Leased lines, virtual private networks
+	Covers a very large geographic area, Ex. Country, or even the world
+	The Internet is a WAN, and the largest WAN at that
+	WAN does not always need to be public like the Internet
+
+Network geography is about the distance involved
+
+Networks consist of either Wi-Fi or Ethernet
+Wi-Fi utilizes the IEEE 802.11 Standard
+Ethernet utilizes the IEEE 802.3 Standard
+
+### Wired Network Topology
+
+Network Topology: Refers to the arrangements of different elements like links, nodes, clients, and servers that make up a computer network
+
+Topologies are documented in diagrams using either Physical Topology or Logical Topology
+
+Physical Topology: Used to show how the network devices and components are physically cabled and connected together and where they're located in the real world environment
+
+Logical Topology: Talks about how the traffic is actually going to flow in the network
+	Logical diagram doesn't show the actual physical location of the devices or use a floor plan
+	Demonstrates the way the data flows between the devices
+
+Topologies:
+	Point-to-point
+	Ring
+	Bus
+	Star
+	Hub-and-spoke
+	Mesh
+
+Point-to-point: Simplest form of topology that involves a direct connection between two devices
+	Often used for connecting computers to a peripheral like a scanner or printer
+
+Ring Topology: A network configuration where each device is connected to two other devices, forming a circular data path
+	Data travels in one direction around the circle until it reaches its destination
+	Prevents data collisions
+	If one node fails, it can disrupt the whole network
+	Not very common, unless used in Fiber Distributed Data Interface (FDDI)
+		Used to conduct data transmissions on fiber optic lines in a local area network
+		Operates on a dual ring structure to provide redundancy
+
+Bus Topology: All of the network devices are connected to a single, central cable, called the bus or backbone
+	Data can be sent by any device and is available to every other device on the bus, but only the intended recipient can receive data
+	Easy to install, less cable
+	Entire network can be disabled if the bus fails
+	More traffic can cause data collisions
+	Not common, older tech
+
+Star Topology: One of the most common topologies, used often in homes
+	Each node connects back to a central connection point, like a switch
+	Very robust, failure of one link does not disrupt others
+	If central connection point fails, the whole network can be disrupted
+
+Hub-and-spoke Topology: Variation of the Star Topology where the central node (hub) is connected to multiple nodes (spokes)
+	Spokes are not directly connected, must transmit data to a hub which then relays it
+	Commonly used in airlines
+	For example, multiple offices in a city may transmit data to a nearby hub. Said hub will then transmit to another distant hub, where it's then distributed to all of the linked devices on that one
+
+Mesh Topology: Features a point-to-point connection between every single device on the network to create a robust and redundant network
+	Full-mesh: Every node is connected to every other node in the network. Can be expensive and difficult to install in larger environments, however.
+		x = n(n-1)/2 where *n= number of nodes*
+	Partial-mesh: Some nodes are organized in a full mesh scheme, while others are only connected to one or two devices in the network
+		More important nodes may be connected to all nodes, while less critical nodes may only be connected to crucial ones
+
+Summary
+Point-to-point: Simple, reliable for small scale connections
+Ring and Bus: Simple, vulnerable to single points of failure
+Star and Hub-and-spoke: Centralized, however rely heavily on the hub/central point
+Mesh: Robustness, redundancy, but complex and costly for full mesh. Partial mesh gives up some redundancy
+
+### Data Center Topology
+
+Data Center: Any facility used by businesses to organize, process, store, and disseminate large amounts of data
+	Can vary widely in size, from 150 square feet to 1.5 million square feet like the Utah Data Center
+
+Data centers utilize the following topologies:
+	Three-Tiered Hierarchy
+	Collapsed Core
+	Spine and Leaf Architecture
+	Traffic Flows
+
+Three Tiered Hierarchy: Consists of three layers:
+	Core: Backbone of network, merges geographically separated networks back into one cohesive unit. Have at least two routers that operate in a redundant configuration.
+	Distribution/Aggregation: Under the core layer, implements access lists and filters. Defines the policies for the network. Switches will be found here routing to different subnets and VLANs
+	Access/Edge: Beneath the distribution layer, connects all endpoint devices. Switches found here, converts packets to frames and ensures they're delivered to correct endpoints
+	Provides redundancy and reliability
+	One device can be down while the rest of the network functions as normal
+
+Collapsed Core: Network architecture where the core and distribution layers are merged into a single layer, giving a two-tiered system
+	Functions of the distribution and core layers are combined, simplifying architecture
+	Found in small or medium sized data centers where three tiered is not needed
+	Is not suitable for larger and more complex networks
+
+Spine and Leaf Architecture: Alternative type of network architecture that focuses on the communication within the data center itself
+	Spine: Connects switches, creating a full mesh topology
+	Leaf: Consists of all access switches, aggregates traffic from different servers and connects into the spine
+	Faster speeds, lower latency than three-tiered
+	Works well with Software Defined Networking
+	Can be used in combination with three-tiered
+		All the servers connect to leaf layers, which connect to the spine, which connects to the core layer of the three-tiered model
+
+Traffic Flows
+	North-South: Traffic enters or leaves the data center from a system residing outside of the data center
+		Northbound Traffic: Leaving datacenter
+		Southbound Traffic: Entering datacenter
+	East-West: Refers to data flow within a data center
