@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Index.md",
+                "file": "OBJ. 1.1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Index"
+              "title": "OBJ. 1.1"
             }
           }
         ],
@@ -205,12 +205,14 @@
   },
   "active": "93bf6ffa3f232077",
   "lastOpenFiles": [
-    "OBJ. 1.6.md",
-    "OBJ. 2.3.md",
-    "OBJ. 2.md",
-    "OBJ. 1.2.md",
-    "OBJ. 1.md",
+    "Layer 1 (Physical Layer).md",
     "Index.md",
+    "OBJ. 1.1.md",
+    "OBJ. 2.3.md",
+    "OBJ. 1.6.md",
+    "OBJ. 2.md",
+    "OBJ. 1.md",
+    "OBJ. 1.2.md",
     "2026-10-14.md",
     "Untitled.canvas"
   ]
