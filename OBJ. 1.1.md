@@ -4,7 +4,7 @@ The [[#^8b2f4a|OSI Model]] was developed in 1977 by the International Organizati
 
 The OSI Model has seven layers:
 * [[Layer 1 (Physical Layer)|Layer 1: Physical]]
-* Layer 2: Data Link
+* [[Layer 2 (Data Link Layer)|Layer 2: Data Link]]
 * Layer 3: Network
 * Layer 4: Transport
 * Layer 5: Session

@@ -4,39 +4,24 @@
     "type": "split",
     "children": [
       {
-        "id": "502da6258ab9a019",
+        "id": "0f68d71a7b1f0125",
         "type": "tabs",
         "children": [
           {
-            "id": "a9ef41cacd9dc7b6",
+            "id": "2772612b13a31bb8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OBJ. 2.md",
+                "file": "Layer 1 (Physical Layer).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OBJ. 2"
-            }
-          },
-          {
-            "id": "93bf6ffa3f232077",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "OBJ. 1.1.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "OBJ. 1.1"
+              "title": "Layer 1 (Physical Layer)"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -203,11 +188,12 @@
       "bases:Create new base": false
     }
   },
-  "active": "93bf6ffa3f232077",
+  "active": "2772612b13a31bb8",
   "lastOpenFiles": [
-    "Layer 1 (Physical Layer).md",
     "Index.md",
     "OBJ. 1.1.md",
+    "Layer 2 (Data Link Layer).md",
+    "Layer 1 (Physical Layer).md",
     "OBJ. 2.3.md",
     "OBJ. 1.6.md",
     "OBJ. 2.md",

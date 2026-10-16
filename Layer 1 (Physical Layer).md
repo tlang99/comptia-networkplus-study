@@ -26,7 +26,7 @@ Layer 1 Devices: Fiber optic cable, Ethernet Cable, Coax Cable, Bluetooth, Wi-Fi
 
 ### Glossary
 
-Bits: Smallest measurement of data. Binary series of 1s and 0s. ^f1d365
+Bits: Smallest measurement of data. Represents a 1 or a 0. ^f1d365
 
 Transition Modulation: If a signal over a medium changes during the clock cycle, then a 1 is represented. Otherwise, a 0 is represented. ^3eb6c2
 
