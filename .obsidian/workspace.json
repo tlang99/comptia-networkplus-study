@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OBJ. 1.4.md",
+                "file": "Copper Cabling.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OBJ. 1.4"
+              "title": "Copper Cabling"
             }
           }
         ]
@@ -190,10 +190,13 @@
   },
   "active": "c1980b6dc486fcc4",
   "lastOpenFiles": [
+    "OBJ. 1.5.md",
+    "OBJ. 1.4.md",
+    "Copper Cabling.md",
+    "OBJ. 5.5.md",
     "Remote Access and Network Service Protocols.md",
     "Web, Email, and File Transfer Protocols.md",
     "TCP, UDP, and ICMP.md",
-    "OBJ. 1.4.md",
     "Layer 7 (Application Layer).md",
     "README.md",
     "Layer 1 (Physical Layer).md",
