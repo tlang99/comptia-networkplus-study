@@ -61,7 +61,33 @@ RJ-11 and RJ-45 are both [[#^1c2d3e|Registered Jack (RJ)]] connectors. F-type an
 
 ### Building a Copper Cable
 
+There are two wiring configurations, [[#^b8f2d1|568A]] and [[#^a7e1c0|568B]]:
+* 568B is preferred for wiring jacks in buildings.
+* Most cables will be 568B to 568B.
+* 568A switches out pins 1, 2, 3, and 6, so the orange and green pairs swap places.
 
+| Pin | 568B | 568A |
+| --- | --- | --- |
+| 1 | Orange-white | Green-white |
+| 2 | Orange | Green |
+| 3 | Green-white | Orange-white |
+| 4 | Blue | Blue |
+| 5 | Blue-white | Blue-white |
+| 6 | Green | Orange |
+| 7 | Brown-white | Brown-white |
+| 8 | Brown | Brown |
+
+NOTE: It is important to know how these pinouts are made for the exam.
+
+#### Choosing Straight-Through or Crossover
+
+Devices are either [[#^c903e2|Data Terminal Equipment (DTE)]] or [[#^d0a4f3|Data Communications Equipment (DCE)]]:
+* DTE to DCE, or DCE to DTE: use a [[#^e1b504|straight-through cable]].
+* DTE to DTE, or DCE to DCE: use a [[#^f2c615|crossover cable]].
+
+NOTE: Dion pointed out that it is important to know you need a crossover cable when connecting a switch to a switch.
+
+This is not always the case in the real world, though, as modern switches implement [[#^03d726|MDIX]], which electronically simulates a crossover cable even when using a straight-through patch cable. For the exam, assume the switch is an older device that doesn't support MDIX.
 
 ### Glossary
 
@@ -112,3 +138,17 @@ F-type Connector: Standard for cable television and satellite connections, and c
 Bayonet Neill-Concelman (BNC) Connector: A coaxial connector characterized by its secure bayonet locking mechanism. Used in professional video connections. Quick, secure, reliable, and stable. Erroneously called the British Naval Connector. ^506172
 
 Radio Guide (RG-X): Used with coaxial cables for various applications like high-speed internet connections, television connections, and radio communications. X is a placeholder. The two most common are RG-6 and RG-59. ^4b5c6d
+
+568B: The wiring configuration preferred for wiring jacks in buildings. Pins 1 to 8: orange-white, orange, green-white, blue, blue-white, green, brown-white, brown. ^a7e1c0
+
+568A: The other wiring configuration. Switches out pins 1, 2, 3, and 6 compared to 568B, so the orange and green pairs swap places. ^b8f2d1
+
+Data Terminal Equipment (DTE): Endpoint devices that connect to a piece of data communications equipment. Ex. laptops, desktops, servers, and routers. ^c903e2
+
+Data Communications Equipment (DCE): Ex. switches, modems, hubs, and bridges. ^d0a4f3
+
+Straight-Through Cable (Patch Cable): Contains the exact same pinout on both ends of the cable. Used to connect a DTE to a DCE. Most cables will be 568B to 568B. ^e1b504
+
+Crossover Cable: Swaps the send and receive pins on the other end of the cable when the connector and its pinout are created, so one end is 568A and the other end is 568B. Used to connect DTE to DTE or DCE to DCE. ^f2c615
+
+Medium Dependent Interface Crossover (MDIX): An automated way to electronically simulate a crossover cable, even when using a straight-through patch cable. Implemented by modern switches. ^03d726
