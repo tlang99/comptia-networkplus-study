@@ -12,32 +12,32 @@ The protocols for this objective are split into three notes:
 
 ### Port Quick Reference
 
-| Port | Protocol | TCP/UDP |
-| --- | --- | --- |
-| 20, 21 | FTP (20 data, 21 control) | |
-| 22 | SSH, SFTP | |
-| 23 | Telnet | |
-| 25 | SMTP | |
-| 53 | DNS | TCP and UDP |
-| 67, 68 | DHCP (67 server listens, 68 client receives) | UDP |
-| 69 | TFTP | |
-| 80 | HTTP | |
-| 110 | POP3 | |
-| 123 | NTP | UDP |
-| 143 | IMAP | |
-| 161, 162 | SNMP (161 manager to agent, 162 agent reports back) | |
-| 389 | LDAP | TCP and UDP |
-| 443 | HTTPS | |
-| 445 | SMB | |
-| 465, 587 | SMTPS | |
-| 514 | Syslog | UDP by default, or TCP |
-| 636 | LDAPS | TCP |
-| 993 | IMAPS | |
-| 1433 | Microsoft SQL | |
-| 3306 | MySQL | |
-| 3389 | RDP | TCP |
-| 5060 | SIP | UDP and TCP |
-| 5061 | SIP over TLS | TCP |
+| Port     | Protocol                                            | TCP/UDP                |
+| -------- | --------------------------------------------------- | ---------------------- |
+| 20, 21   | FTP (20 data, 21 control)                           |                        |
+| 22       | SSH, SFTP                                           |                        |
+| 23       | Telnet                                              |                        |
+| 25       | SMTP                                                |                        |
+| 53       | DNS                                                 | TCP and UDP            |
+| 67, 68   | DHCP (67 server listens, 68 client receives)        | UDP                    |
+| 69       | TFTP                                                |                        |
+| 80       | HTTP                                                |                        |
+| 110      | POP3                                                |                        |
+| 123      | NTP                                                 | UDP                    |
+| 143      | IMAP                                                |                        |
+| 161, 162 | SNMP (161 manager to agent, 162 agent reports back) |                        |
+| 389      | LDAP                                                | TCP and UDP            |
+| 443      | HTTPS                                               |                        |
+| 445      | SMB                                                 |                        |
+| 465, 587 | SMTPS                                               |                        |
+| 514      | Syslog                                              | UDP by default, or TCP |
+| 636      | LDAPS                                               | TCP                    |
+| 993      | IMAPS                                               |                        |
+| 1433     | Microsoft SQL                                       |                        |
+| 3306     | MySQL                                               |                        |
+| 3389     | RDP                                                 | TCP                    |
+| 5060     | SIP                                                 | UDP and TCP            |
+| 5061     | SIP over TLS                                        | TCP                    |
 
 ### Glossary
 
