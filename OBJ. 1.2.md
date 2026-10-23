@@ -62,19 +62,47 @@ Its cons:
 * If a machine is off, its files may be inaccessible
 * Inefficient for large networks
 
+### Network Infrastructure Devices
+
+Networks today primarily use routers and switches, which evolved from bridges and hubs:
+* [[#^f5a291|Router]]: Layer 3, IP addresses
+* [[#^29ab7a|Layer 3 switch]]: Layer 3, a switch and a router combined
+* [[#^d4e8b6|Switch]]: Layer 2, MAC addresses
+* [[#^08908e|Bridge]]: Layer 2, MAC addresses
+* [[#^c9f1a2|Hub]]: Layer 1, repeats everything
+
+There are three types of hubs:
+* [[#^4ba9a3|Passive hub]]
+* [[#^426b18|Active hub]]
+* [[#^2c0aac|Smart hub]]
+
+Hubs don't break up [[OBJ. 2.2#^534793|collision domains]]. Bridges can be placed between hubs to split them up.
+
+| Device | Collision domains | Broadcast domains | OSI layer |
+| --- | --- | --- | --- |
+| Hub | 1 | 1 | 1 |
+| Bridge | 1 per port | 1 | 2 |
+| Switch | 1 per port | 1 | 2 |
+| Multilayer switch | 1 per port | 1 per port | 3+ |
+| Router | 1 per port | 1 per port | 3+ |
+
+NOTE: Dion says this is important to remember for the exam:
+* When a switch is mentioned, it is almost always a standard Layer 2 switch focused on MAC addresses, unless it's specifically called a multilayer or Layer 3 switch.
+* When a router is mentioned, it is a Layer 3 device focused on IP addresses.
+
 ### Glossary
 
 Clients: Devices that users access the network with. Ex. Laptops, workstations, smartphones, and tablets. ^a1c3e9
 
 Servers: Provide resources to other clients on the network. Ex. Email servers, file servers, and media servers. ^b27d40
 
-Hubs: Older devices that connect clients and servers over a local area network by broadcasting all traffic out every port. ^c9f1a2
+Hubs: Older Layer 1 devices that connect clients and servers over a local area network by broadcasting all traffic out every port. Known as multiport repeaters. Identified in diagrams by a square icon with arrows pointing both ways. Don't break up collision domains. ^c9f1a2
 
-Switches: "Smarter hubs" that connect network devices and forward traffic from one port to the destination port. ^d4e8b6
+Switches: "Smarter hubs" that connect network devices and forward traffic from one port to the destination port. Known as multiport bridges. A Layer 2 device that connects multiple network segments, acting like a hub and a bridge combined. Makes forwarding decisions based on MAC addresses, just like a bridge, using its MAC address table. ^d4e8b6
 
 Wireless Access Points (WAPs/APs): Allow wireless devices to connect to a wired network using radio signals. ^e06f3c
 
-Routers: Connect different networks together and make forwarding decisions based on IP addresses. ^f5a291
+Routers: Layer 3 devices that connect different networks together and make forwarding decisions based on IP addresses. ^f5a291
 
 Firewalls: Security barriers between internal and external networks that monitor and control incoming and outgoing traffic. Can be hardware-based, software-based, or both. ^1b7c4d
 
@@ -99,3 +127,13 @@ Wide Area Network (WAN) Links: Used to connect networks over large geographical 
 Client/Server Model: Uses a dedicated server to provide access to network resources, such as files, scanners, and printers. ^b8f530
 
 Peer-to-Peer Model: Peers (Ex. laptops, desktops) share resources directly with each other, without a dedicated server. ^c19d64
+
+Bridge: A Layer 2 device that analyzes the source MAC address in a frame and makes intelligent forwarding decisions based on the destination MAC address. ^08908e
+
+Layer 3 Switch (Multilayer Switch): Makes Layer 3 routing decisions and interconnects entire networks, not just segments. Basically a switch and a router combined. ^29ab7a
+
+Passive Hub: Repeats the signal with no amplification, sending it out all ports. Basically a splitter. ^4ba9a3
+
+Active Hub: A passive hub that also boosts the signal, restarting the distance limit of the medium. ^426b18
+
+Smart Hub: An active hub with enhanced features like SNMP, which allows it to be managed remotely. ^2c0aac
