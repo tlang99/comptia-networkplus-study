@@ -76,7 +76,7 @@ There are three types of hubs:
 * [[#^426b18|Active hub]]
 * [[#^2c0aac|Smart hub]]
 
-Hubs don't break up [[OBJ. 2.2#^534793|collision domains]]. Bridges can be placed between hubs to split them up.
+Hubs don't break up [[Ethernet Fundamentals#^534793|collision domains]]. Bridges can be placed between hubs to split them up.
 
 | Device | Collision domains | Broadcast domains | OSI layer |
 | --- | --- | --- | --- |

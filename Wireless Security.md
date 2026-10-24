@@ -57,7 +57,7 @@ A [[#^6f01cc|captive portal]] is commonly used for guest and public Wi-Fi. It's 
 
 Pre-shared Key (PSK): An authentication method where the same password or key is used on both the WAP and every connecting client device to gain access to the network. ^a77a34
 
-802.1X: The most widely used enterprise-grade authentication method. Relies on an authentication server, and users authenticate individually. ^aee373
+802.1X: The most widely used enterprise-grade authentication method. Relies on an authentication server, and users authenticate individually. More detail in [[OBJ. 4.3#^52fd64|NAC]]. ^aee373
 
 Personal Mode: A wireless security mode that authenticates with a pre-shared key. ^a09ec4
 
