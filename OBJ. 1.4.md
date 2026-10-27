@@ -39,8 +39,24 @@ The protocols for this objective are split into three notes:
 | 5060     | SIP                                                 | UDP and TCP            |
 | 5061     | SIP over TLS                                        | TCP                    |
 
+### Traffic Types
+
+Data flows between devices in one of four ways:
+* [[#^ac7136|Unicast]]: one source to one destination
+* [[#^53d6d4|Multicast]]: one source to multiple specific destinations
+* [[#^ae02db|Broadcast]]: one source to all devices on the network
+* [[#^af659e|Anycast]]: one source to the nearest of multiple specific destinations
+
 ### Glossary
 
 Port: Virtual entry/exit point for communications used by software applications to exchange information. A logical opening in a computer that represents a service or application. ^1a2f3e
 
 Protocol: Set of rules and conventions for data exchange between network devices. ^2b3c4d
+
+Unicast: Data travels from a single source to a single destination device. ^ac7136
+
+Multicast: Data travels from a single source to multiple, but specific, destination devices. ^53d6d4
+
+Broadcast: Data travels from a single source device to all devices on the network. ^ae02db
+
+Anycast: Data travels from a single source to the nearest of multiple (but specific) destination devices. Unique to IPv6. ^af659e

@@ -12,3 +12,6 @@ Makes up 23% of the exam, covering network models, protocols, and addressing
 
 [[OBJ. 1.6]] - States you must be able to compare and contrast network topologies, architectures, and types
 
+[[OBJ. 1.7]] - Given a scenario, use appropriate IPv4 network addressing
+
+[[OBJ. 1.8]] - Summarize evolving use cases for modern network environments
