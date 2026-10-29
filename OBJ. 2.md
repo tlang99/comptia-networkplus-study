@@ -4,6 +4,8 @@ Makes up 20% of the exam
 
 Outlines hands-on deployment and configuration of wired and wireless enterprise infrastructure
 
+[[OBJ. 2.1]] - Explain characteristics of routing technologies
+
 [[OBJ. 2.2]] - Given a scenario, configure switching technologies and features
 
 [[OBJ. 2.3]] - Given a scenario, select and configure wireless devices and technologies

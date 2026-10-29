@@ -72,7 +72,7 @@ Public (Routable) Address: A unique IP address assigned to each device on the in
 
 Private (Non-routable) Address: Used in a LAN to allow communication between devices in that network without a public IP address. Not accessible over the internet. Private addresses fall in the ranges 10.x.x.x, 172.16.x.x – 172.31.x.x, or 192.168.x.x. ^03b4e6
 
-Network Address Translation (NAT): A method that allows a device, usually a router, to act as an agent between the internet and a local, private network. ^5d6b02
+Network Address Translation (NAT): A method that allows a device, usually a router, to act as an agent between the internet and a local, private network. More in [[Address Translation]]. ^5d6b02
 
 Request for Comments (RFC): A formal publication from the Internet Society and the Internet Engineering Task Force (IETF). ^0c61ea
 

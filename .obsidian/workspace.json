@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "OBJ. 1.8.md",
+                "file": "OBJ. 2.1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "OBJ. 1.8"
+              "title": "OBJ. 2.1"
             }
           }
         ]
@@ -190,11 +190,16 @@
   },
   "active": "5c4d7b57f25a4bf3",
   "lastOpenFiles": [
+    "Routing Redundancy.md",
+    "Address Translation.md",
+    "Routing Protocols.md",
+    "OBJ. 2.1.md",
+    "Routing Fundamentals.md",
+    "OBJ. 1.8.md",
     "IPv6 Addressing.md",
     "Subnetting.md",
     "IPv4 Addressing.md",
     "OBJ. 1.5.md",
-    "OBJ. 1.8.md",
     "OBJ. 1.4.md",
     "OBJ. 1.7.md",
     "OBJ. 1.6.md",
@@ -211,11 +216,6 @@
     "OBJ. 2.3.md",
     "Wireless Security.md",
     "OBJ. 2.4.md",
-    "Wireless Frequencies and Standards.md",
-    "Wireless Networks.md",
-    "OBJ. 5.5.md",
-    "README.md",
-    "OBJ. 1.1.md",
     "Untitled.canvas"
   ]
 }
